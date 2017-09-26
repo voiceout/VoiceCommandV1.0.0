@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.phokchanrithisak.voiceoutv100.MainActivity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@android:color/holo_green_light">
+
+    <TextView
+        android:id="@+id/textDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="50dp"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteY="100dp"
+        tools:layout_editor_absoluteX="89dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="126dp"
+        android:fontFamily="casual"/>
+
+    <TextView
+        android:id="@+id/promptMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap on mic to speak"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteY="390dp"
+        tools:layout_editor_absoluteX="129dp"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="casual"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/promptMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:background="@android:color/holo_orange_light"
+        android:fontFamily="casual"
+        android:onClick="onButtonClick"
+        android:text="Voice Now"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="332dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Voice Out Version 1"
+        android:fontFamily="casual"
+        android:layout_marginBottom="27dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textDisplay"
+        android:layout_alignEnd="@+id/textDisplay" />
+
+</RelativeLayout>
